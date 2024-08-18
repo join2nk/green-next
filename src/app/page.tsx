@@ -38,7 +38,7 @@ function ShortAboutUsSection() {
       <div className="flex flex-col md:flex-row gap-5 py-10 [&>*]:md:max-w-[50%] items-center">
         <div className="flex-1 grow ">
           <h1 className="text-4xl font-serif ">Green Agri Corp Pvt Ltd</h1>
-          <p className=" text-2xl font-thin">Founded as a pioneer in the food industry, Green Agri Corp Private Limited bridges traditional farming methods with modern technology to deliver premium rice from India's prosperous farms.</p>
+          <p className=" text-2xl font-thin">Founded as a pioneer in the food industry, Green Agri Corp Private Limited bridges traditional farming methods with modern technology to deliver premium rice from India&apos;s prosperous farms.</p>
           {/* find out more btn */}
           <div className="p-2"></div>
           <div className="flex items-center gap-3">

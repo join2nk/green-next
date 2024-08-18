@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 };
 import { LineChart, Mail, MenuIcon } from "lucide-react"
 import { NavBar } from "./_layout-compoents/Nav";
+import Script from "next/script";
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -17,6 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      </head>
       <body className={inter.className}>
         <div className="flex flex-col overflow-hidden min-h-screen">
           <NavBar />
@@ -25,8 +29,10 @@ export default function RootLayout({
           </div>
           <Footer />
         </div>
+        <Script src="https://unpkg.com/aos@next/dist/aos.js" />
+        <Script src="/script/aos_init.js"></Script>
       </body>
-    </html>
+    </html >
   );
 }
 function Footer() {

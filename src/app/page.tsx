@@ -1,3 +1,4 @@
+"use client"
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -34,16 +35,15 @@ export default function Home() {
 
 function ShortAboutUsSection() {
   return <>
-    <div className="container mx-auto  md:px-20 px-3">
+    <div className="container mx-auto  md:px-20 px-3" >
       <div className="flex flex-col md:flex-row gap-5 py-10 [&>*]:md:max-w-[50%] items-center">
-        <div className="flex-1 grow ">
-          <h1 className="text-4xl font-serif ">Green Agri Corp Pvt Ltd</h1>
+        <div className="flex-1 grow " data-aos="fade-right">
+          <h1 className="text-4xl font-serif " >Green Agri Corp Pvt Ltd</h1>
           <p className=" text-2xl font-thin">Founded as a pioneer in the food industry, Green Agri Corp Private Limited bridges traditional farming methods with modern technology to deliver premium rice from India&apos;s prosperous farms.</p>
           {/* find out more btn */}
           <div className="p-2"></div>
           <div className="flex items-center gap-3">
             <Link href="/about-us">
-
               <button className="
                 p-3 px-8 flex items-center justify-center gap-3 bg-amber-400 
               ">About Us
@@ -52,9 +52,9 @@ function ShortAboutUsSection() {
             </Link>
           </div>
         </div>
-        <div className="flex-1 md:flex justify-center items-center relative  md:p-2" >
+        <div className="flex-1 md:flex justify-center items-center relative  md:p-2" data-aos="fade-left" data-aos-delay="300">
           {/* 2 solid shadow behind the image  like cards */}
-          <div className=" aspect-square object-cover rounded-lg shadow-lg relative max-w-sm " >
+          <div className=" aspect-square object-cover rounded-lg shadow-lg relative max-w-sm"  >
             <div className=" absolute top-12 left-12 right-0 bottom-0 z-[-1] rounded-lg shadow-lg scale-110 bg-slate-300 transition-all "></div>
             <Image src="/IMG_1.jpg" alt="About Us" width={500} height={500} className="object-cover h-full rounded-lg w-full" />
           </div>

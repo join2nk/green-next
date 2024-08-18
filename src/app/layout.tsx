@@ -19,6 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        {/* <link rel="stylesheet" href="/aos/aos.css" /> */}
       </head>
       <body className={inter.className}>
         <div className="flex flex-col overflow-hidden min-h-screen">

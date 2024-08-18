@@ -9,4 +9,4 @@ services:
       - 3020:3000
 #    volumes:
 #      - ./prisma/:/app/prisma/
-      # - ./uploads/:/app/uploads/
+#      - ./uploads/:/app/uploads/

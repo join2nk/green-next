@@ -37,7 +37,7 @@ function ShortAboutUsSection() {
   return <>
     <div className="container mx-auto  md:px-20 px-3" >
       <div className="flex flex-col md:flex-row gap-5 py-10 [&>*]:md:max-w-[50%] items-center">
-        <div className="flex-1 grow " data-aos="fade-right">
+        <div className="flex-1 grow " data-aos="fade-right" data-aos-once="true">
           <h1 className="text-4xl font-serif " >Green Agri Corp Pvt Ltd</h1>
           <p className=" text-2xl font-thin">Founded as a pioneer in the food industry, Green Agri Corp Private Limited bridges traditional farming methods with modern technology to deliver premium rice from India&apos;s prosperous farms.</p>
           {/* find out more btn */}
@@ -52,7 +52,7 @@ function ShortAboutUsSection() {
             </Link>
           </div>
         </div>
-        <div className="flex-1 md:flex justify-center items-center relative  md:p-2" data-aos="fade-left" data-aos-delay="300">
+        <div className="flex-1 md:flex justify-center items-center relative  md:p-2" data-aos="fade-left" data-aos-delay="300" data-aos-once="true">
           {/* 2 solid shadow behind the image  like cards */}
           <div className=" aspect-square object-cover rounded-lg shadow-lg relative max-w-sm"  >
             <div className=" absolute top-12 left-12 right-0 bottom-0 z-[-1] rounded-lg shadow-lg scale-110 bg-slate-300 transition-all "></div>

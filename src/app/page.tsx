@@ -2,13 +2,14 @@
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-
+import backgroundImage from "../../public/IMG_1.jpg";
 export default function Home() {
   return (
     <div>
       <div className="relative bg-slate-900/40 h-full overflow-hidden ">
 
-        <div className={`bg-[url("/IMG_1.jpg")] scale-110  transition-all absolute right-0 left-0 top-0 bottom-0 -z-10 bg-cover bg-center blur-sm`}>
+        <div className={` scale-110  transition-all absolute right-0 left-0 top-0 bottom-0 -z-10 bg-cover bg-center blur-sm`}>
+          <Image src={backgroundImage} alt="backgroundImage" fill className="object-cover"></Image>
         </div>
         <div className="flex justify-center items-center h-full  z-10  min-h-[500px]">
 

@@ -36,7 +36,7 @@ export default function Home() {
 function ShortAboutUsSection() {
   return <>
     <div className="container mx-auto  px-5 max-w-5xl  " >
-      <div className="flex flex-col md:flex-row gap-5 py-10 [&>*]:md:max-w-[50%] items-center">
+      <div className="flex flex-col md:flex-row gap-20 mt-10 py-10 [&>*]:md:max-w-[50%] items-center">
         <div className="flex-1 grow max-w-md " data-aos="fade-right" data-aos-once="true">
           <h1 className="text-4xl font-serif " >Green Agri Corp Pvt Ltd</h1>
           <p className=" text-2xl font-thin">Founded as a pioneer in the food industry, Green Agri Corp Private Limited bridges traditional farming methods with modern technology to deliver premium rice from India&apos;s prosperous farms.</p>

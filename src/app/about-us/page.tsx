@@ -5,11 +5,11 @@ import React from 'react'
 export default function AboutUsPage() {
   return (
     <>
-      <div className="relative bg-slate-900/40 h-full overflow-hidden ">
+      <div className="relative bg-slate-900/40 h-full overflow-hidden  ">
 
         <div className={`bg-[url("/IMG_1.jpg")] scale-110  transition-all absolute right-0 left-0 top-0 bottom-0 -z-10 bg-cover bg-center blur-md`}>
         </div>
-        <div className="flex items-center h-full  z-10  min-h-[100px]">
+        <div className="flex items-center h-full  z-10  min-h-[100px] max-w-7xl mx-auto">
           <div className="text-slate-200 gap-3 flex transition-all px-12 ">
             <Link href="/">
               <HomeIcon />

@@ -35,7 +35,7 @@ export default function RootLayout({
   );
 }
 function Footer() {
-  return <footer className="bg-emerald-600 text-white text-center py-5">
+  return <footer className="bg-gray-200 text-slate-400 text-center py-5">
     <p>© 2021 Green Agricorp</p>
   </footer>
 }

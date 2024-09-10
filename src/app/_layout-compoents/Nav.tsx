@@ -1,30 +1,44 @@
 "use client"
 import Image from "next/image"
-import { Mail, MenuIcon } from "lucide-react"
+import { Mail, MenuIcon, Phone } from "lucide-react"
 import { useState } from "react"
+import Link from "next/link"
 export function NavBar() {
   const [open, setOpen] = useState(false)
   return (
     <>
       <div className="px-5 border py-2 flex justify-between items-center">
-        <Image src="/logo.png" alt="Logo" width={200} height={200} />
-        <div className=" gap-2 text-slate-500 hidden sm:flex">
-          <Mail size={24} />
-          greenagricorp@gmail.com
-        </div>
-        <div className="gap-2 text-slate-500 flex sm:hidden">
-          <MenuIcon size={40} className=""
-            onClick={() => setOpen(!open)}
-          />
+        <div className=" max-w-7xl mx-auto flex justify-between w-full items-center">
+
+          {/* <img src="/logo.png" alt="Logo" className="w-64" /> */}
+          <Image src="/logo.png" alt="Logo" width={200} height={100} />
+          <div className=" gap-2 text-slate-500 hidden sm:flex flex-col *:justify-end">
+            <div className="flex gap-2 items-center">
+              greenagricorp@gmail.com
+              <Mail size={20} />
+            </div>
+            <div className="flex gap-2 items-center">
+              +91 971488521
+              <div className="rotate-45">
+                <Phone size={20} className="rotate-90" />
+              </div>
+            </div>
+          </div>
+          <div className="gap-2 text-slate-500 flex sm:hidden">
+            <MenuIcon size={40} className=""
+              onClick={() => setOpen(!open)}
+            />
+          </div>
         </div>
       </div>
-      <div className="px-20 sm:flex hidden  gap-5 bg-emerald-600/90 text-white py-3 border-black border-b-1">
-        {
-          ["Home", "Business", "Contact Us", "Products"].map((x, i) =>
-            <div key={i} className="font-bold hover:underline underline-offset-4  transition-all ">
-              <span>{x}</span>
-            </div>)
-        }
+      <div className="sm:flex hidden  gap-5 bg-gray-200 text-slate-700  py-3 border-black border-b-1 tracking-wide ">
+        <div className="max-w-7xl mx-auto  gap-5 xl:px-0 px-5 flex w-full">
+          <Link className="font-bold hover:underline underline-offset-4  transition-all " href={"/"}>Home</Link>
+          <Link className="font-bold hover:underline underline-offset-4  transition-all " href={"/about-us"}>About Us</Link>
+          <Link className="font-bold hover:underline underline-offset-4  transition-all " href={"/business"}>Business</Link>
+          <Link className="font-bold hover:underline underline-offset-4  transition-all " href={"/products"}>Products</Link>
+          <Link className="font-bold hover:underline underline-offset-4  transition-all " href={"/"}>Contact Us</Link>
+        </div>
       </div>
       <div className="relative">
         {open && <>
